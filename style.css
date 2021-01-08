@@ -1,0 +1,93 @@
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+@media (max-width: 600px) {
+  .dial {
+    height: 310px;
+    width: 310px;
+  }
+}
+
+.timer {
+  position: relative;
+}
+
+* {
+  font: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .timer input {
+    display: block;
+    border: none;
+    width: 140px;
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+.timer button {
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .timer button {
+    font-size: 28px;
+  }
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showOnSmallDevice {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hideOnSmallDevice {
+    display: none;
+  }
+
+  .showOnSmallDevice {
+    display: block;
+  }
+}
